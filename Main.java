@@ -10,7 +10,7 @@ public class Main {
 	
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static void main(String[] args) {
-		GymClass class1 = new GymClass(1,"Mr. Smith", "Jazz Hands");//creating the gyms
+		GymClass class1 = new GymClass(1,"Mr. Smith", "Jazz Hands");//creating the gym classes
 		GymClass class2 = new GymClass(2,"Mr. Doe", "Hide & Seek");
 		GymClass class3 = new GymClass(3,"Ms. Jones", "Weight Lifting");
 		
@@ -39,7 +39,7 @@ public class Main {
 		System.out.println("------------------------");
 		customerList.display();
 		
-		class1.addCustomer(cust1); // enrolling customers to different gyms
+		class1.addCustomer(cust1); // enrolling customers to different gym classes
 		class1.addCustomer(cust2);
 		class2.addCustomer(cust3);
 		class3.addCustomer(cust4);
@@ -48,13 +48,13 @@ public class Main {
 		
 		System.out.println("Current Customers enrolled in Jazz Hands:");// showing who's enrolled in each gym class
 		System.out.println("-----------------------------------------");
-		gym1.displayEnrolled(); 
+		class1.displayEnrolled(); 
 		System.out.println("Current Customers enrolled in Hide & Seek:");
 		System.out.println("------------------------------------------");
-		gym2.displayEnrolled();
+		class2.displayEnrolled();
 		System.out.println("Current Customers enrolled in Weight Lifting:");
 		System.out.println("---------------------------------------------");
-		gym3.displayEnrolled();
+		class3.displayEnrolled();
 		
 			}
 }

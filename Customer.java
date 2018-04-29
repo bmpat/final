@@ -9,7 +9,7 @@ public class Customer {
 	private String email;
 	
 	
-	public Customer(Integer id, String name, String email) { // constructr
+	public Customer(Integer id, String name, String email) { // constructor
 		this.id = id;
 		this.name = name;
 		this.email = email;
